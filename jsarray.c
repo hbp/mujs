@@ -395,6 +395,7 @@ static void Ap_toString(js_State *J)
 {
 	unsigned int top = js_gettop(J);
 	js_pop(J, top - 1);
+        js_pushstring (J, ",");
 	Ap_join(J);
 }
 
